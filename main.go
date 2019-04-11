@@ -16,4 +16,10 @@ func main() {
 		total += float64(arr[i])
 	}
 	fmt.Println(total / float64(len(arr)))
+	// using range to loop through arr
+	total = 0
+	for _, val := range arr { // _ notifies that the key will not be needed
+		total += float64(val)
+	}
+	fmt.Println(total / float64(len(arr)))
 }
