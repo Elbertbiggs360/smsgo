@@ -22,4 +22,10 @@ func main() {
 		total += float64(val)
 	}
 	fmt.Println(total / float64(len(arr)))
+	// shorter syntax for declaring array
+	x := [2]float64{
+		23,
+		46, //trailing comma needed
+	}
+	fmt.Println(x)
 }
