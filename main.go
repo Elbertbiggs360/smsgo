@@ -11,4 +11,9 @@ func main() {
 	var arr [5]int // are a fixed size
 	arr[4] = 500   // their values must match the specified value data type
 	fmt.Println(arr)
+	var total float64
+	for i := 0; i < len(arr); i++ {
+		total += float64(arr[i])
+	}
+	fmt.Println(total / float64(len(arr)))
 }
