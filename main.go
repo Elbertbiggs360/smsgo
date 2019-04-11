@@ -2,8 +2,9 @@ package main
 
 import "fmt"
 
-// this is a comment
-
 func main() {
-	fmt.Println("Hello World")
+	name := "Bruce"
+	var lastName string = "Bigirwenkya"
+	const gender string = "male"
+	fmt.Println("Hello, my name is", name, lastName)
 }
